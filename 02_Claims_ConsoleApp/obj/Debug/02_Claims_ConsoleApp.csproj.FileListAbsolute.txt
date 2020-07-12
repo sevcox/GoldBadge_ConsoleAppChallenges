@@ -1,0 +1,10 @@
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\bin\Debug\02_Claims_ConsoleApp.exe.config
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\bin\Debug\02_Claims_ConsoleApp.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\bin\Debug\02_Claims_ConsoleApp.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\bin\Debug\02_Claims_Repository.dll
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\bin\Debug\02_Claims_Repository.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\obj\Debug\02_Claims_ConsoleApp.csprojAssemblyReference.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\obj\Debug\02_Claims_ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\obj\Debug\02_Claims_ConsoleApp.csproj.CopyComplete
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\obj\Debug\02_Claims_ConsoleApp.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\02_Claims_ConsoleApp\obj\Debug\02_Claims_ConsoleApp.pdb

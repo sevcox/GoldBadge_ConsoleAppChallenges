@@ -17,7 +17,7 @@ namespace _02_Claims_Repository
         public int ClaimId { get; set; }
         public ClaimType ClaimType { get; set; }
         public string Description { get; set; }
-        public double ClaimAmount { get; set; }
+        public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
         public DateTime DateOfClaim { get; set; }
         public bool IsValid

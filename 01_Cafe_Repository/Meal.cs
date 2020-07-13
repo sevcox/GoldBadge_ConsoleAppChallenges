@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace _01_Cafe_Repository
 {
-    // This is similar to the streaming content example in class... meal is a portion of menu like movie was a portion of streamingcontent. I could have several other classes ranging from appetizer or sides. I choose inheritance because I want to share the properties from the Menu class as well.
-    public class Meal : Menu
+    public enum FoodType
+    {
+        Breakfast = 1,
+        Lunch,
+        Dinner
+    }
+    public class Meal
     {
         //Properties
-
+        public FoodType Type { get; set; }
+        //Item Name -- string
+        public string Name { get; set; }
         //Meal Number -- int
         public int Number { get; set; }
-        public bool ComesWithBread { get; set; }
+        //Item Description -- string
+        public string Description { get; set; }
+        //List of Ingredients -- list of type Ingredient
+        public List<string> Ingredients { get; set; }
+        //Item Price -- double
+        public decimal Price { get; set; }
         public bool IsOnSpecial
         {
             get
@@ -28,34 +40,25 @@ namespace _01_Cafe_Repository
                 }
             }
         }
+        //Method
+        public string DisplayIngredients(List<string> listOfIngredients)
+        {
+            string ingredients = string.Join(", ", listOfIngredients);
+            return ingredients;
+        }
         //Constructors
         public Meal()
         {
 
         }
-        public Meal(string name,bool comesWithBread)
+        public Meal(FoodType foodType, string name, int number, string description, List<string> ingredients, decimal price)
         {
-            Name = name;
-            ComesWithBread = comesWithBread;
-        }
-        public Meal (string name, int number)
-        {
+            Type = foodType;
             Name = name;
             Number = number;
-        }
-        public Meal (string name, int number, double price)
-        {
-            Name = name;
-            Number = number;
-            Price = price;
-        }
-        public Meal(string name, int number, double price, string description, List<Ingredient> ingredients)
-        {
-            Name = name;
-            Number = number;
-            Price = price;
             Description = description;
             Ingredients = ingredients;
+            Price = price;
         }
 
     }

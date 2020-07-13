@@ -8,14 +8,20 @@ namespace _02_Claims_Repository
 {
     public class ClaimRepository
     {
-        protected readonly Queue<InsuranceClaim> _claimdirectory = new Queue<InsuranceClaim>();
+        protected readonly Queue<InsuranceClaim> _claims = new Queue<InsuranceClaim>();
         //CRUD
+        //Add claim to queue
+        public bool AddClaimToQueue(InsuranceClaim claim)
+        {
+            int startingCount = _claims.Count;
+            _claims.Enqueue(claim);
+            bool wasAdded = (_claims.Count > startingCount) ? true : false;
+            return wasAdded;
+        }
         // See all claims
         public Queue<InsuranceClaim> GetAllInsuranceClaims()
         {
-            return _claimdirectory;
+            return _claims;
         }
-        //Take care of next claim
-        //Enter a new claim
     }
 }

@@ -39,5 +39,14 @@ namespace _02_Claims_Repository
         {
 
         }
+        public InsuranceClaim(int claimID, ClaimType claimType, string description, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
+        {
+            ClaimId = claimID;
+            ClaimType = claimType;
+            Description = description;
+            ClaimAmount = claimAmount;
+            DateOfIncident = dateOfIncident;
+            DateOfClaim = dateOfClaim;
+        }
     }
 }

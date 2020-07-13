@@ -1,0 +1,10 @@
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csprojAssemblyReference.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csproj.CoreCompileInputs.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.exe.config
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\bin\Debug\01_Cafe_Repository.dll
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\bin\Debug\01_Cafe_Repository.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csproj.CopyComplete
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.pdb

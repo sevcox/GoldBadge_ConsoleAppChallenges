@@ -1,0 +1,10 @@
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\obj\Debug\03_Badges_Console.csproj.CoreCompileInputs.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\bin\Debug\03_Badges_Console.exe.config
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\bin\Debug\03_Badges_Console.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\bin\Debug\03_Badges_Console.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\bin\Debug\03_Badges_Repository.dll
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\bin\Debug\03_Badges_Repository.pdb
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\obj\Debug\03_Badges_Console.csprojAssemblyReference.cache
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\obj\Debug\03_Badges_Console.csproj.CopyComplete
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\obj\Debug\03_Badges_Console.exe
+C:\Users\sever\OneDrive\Desktop\ElevenFiftyProjects\GoldBadge\ConsoleAppChallenges\03_Badges_Console\obj\Debug\03_Badges_Console.pdb

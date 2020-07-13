@@ -7,7 +7,7 @@
     <ProjectGuid>{F144DF54-0241-49A9-8673-F0217131D835}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_03_Badges_Console</RootNamespace>
-    <AssemblyName>_03_Badges_Console</AssemblyName>
+    <AssemblyName>03_Badges_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03_Badges_Repository\03_Badges_Repository.csproj">
+      <Project>{DB47A5C1-BF53-42B8-9E8C-20E4C5F257DA}</Project>
+      <Name>03_Badges_Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

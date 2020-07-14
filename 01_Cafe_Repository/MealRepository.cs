@@ -6,41 +6,49 @@ using System.Threading.Tasks;
 
 namespace _01_Cafe_Repository
 {
-    public class MealRepository : MenuRepository
+    public class MealRepository
     {
+        protected readonly List<Meal> _allMeals = new List<Meal>();
         //CRUD
-        private string _errorMessage = "Sorry, your attempt was not successful.";
+        //Add Meals to Menu
+        public bool AddMealsToMenu(Meal meal)
+        {
+            int startingCount = _allMeals.Count;
+            _allMeals.Add(meal);
+            bool wasAdded = (_allMeals.Count > startingCount) ? true : false;
+            return wasAdded;
+        }
+
+        //Delete Menu Items
+        public bool DeleteExistingMenuItem (Meal existingMeal)
+        {
+            bool wasDeleted = _allMeals.Remove(existingMeal);
+            return wasDeleted;
+        }
+
+        //Receive a List of Menu Items
+        public List<Meal> GetItemsFromMenu()
+        {
+            return _allMeals;
+        }
 
         //Get meal by name
         public Meal GetMealByName(string name)
         {
-            foreach (Menu item in _itemDirectory)
+            foreach (Meal meal in _allMeals)
             {
-                if (item.Name.ToLower() == name.ToLower() && item is Meal)
+                if (meal.Name.ToLower() == name.ToLower())
                 {
-                    return (Meal)item;
+                    return meal;
                 }
                 else
                 {
-                    Console.WriteLine(_errorMessage);
+                    Console.WriteLine("Sorry, your attempt was not successful.");
                 }
             }
             return null;
         }
 
-        //Get list of all meals
-        public List<Meal> GetAllMeals()
-        {
-            List<Meal> allMeals = new List<Meal>();
-            foreach (Menu item in _itemDirectory)
-            {
-                if (item is Meal)
-                {
-                    allMeals.Add((Meal)item);
-                }
-            }
-            return allMeals;
-        }
-
     }
+
 }

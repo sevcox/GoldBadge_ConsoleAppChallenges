@@ -83,7 +83,7 @@ namespace _02_Claims_ConsoleApp
                     queueOfClaims.Dequeue();
                     break;
                 case "n":
-                    queueOfClaims.Enqueue(claim1);
+                    Console.WriteLine("Okay, please return to main menu.");
                     break;
                 default:
                     Console.WriteLine("You did not enter a valid response.");

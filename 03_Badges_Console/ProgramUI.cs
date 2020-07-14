@@ -95,7 +95,11 @@ namespace _03_Badges_Console
                 "\t What is the badge number you would like to update? ");
             int userBadgeNumber = Convert.ToInt32(Console.ReadLine());
             Badge oldBadge = _badgeRepo.GetBadgeByNumber(userBadgeNumber);
-            if ( oldBadge.DoorAccess.Count < 1)
+            if (oldBadge.DoorAccess.Count == 0)
+            {
+                Console.WriteLine("{0} has access to no doors.", oldBadge.Number);
+            }
+            else if ( oldBadge.DoorAccess.Count < 1)
             {
                 Console.WriteLine("{0} has access to doors {1}", oldBadge.Number, oldBadge.DisplayDoors(oldBadge.DoorAccess));
             }
@@ -153,7 +157,7 @@ namespace _03_Badges_Console
                         Console.WriteLine("\n Enter in the door number you would like to add: ");
                         string userNewDoorInput = Console.ReadLine();
                         _badgeRepo.AddADoorToBadge(oldBadge, userNewDoorInput);
-                        if (oldBadge.DoorAccess.Count < 1)
+                        if (oldBadge.DoorAccess.Count > 1)
                         {
                             Console.WriteLine("{0} has access to doors {1}", Convert.ToString(oldBadge.Number), oldBadge.DisplayDoors(oldBadge.DoorAccess));
                         }

@@ -48,20 +48,5 @@ namespace _03_Badges_Repository
             bool wasRemoved = (oldBadge.DoorAccess.Count < startingCount) ? true : false;
             return wasRemoved;
         }
-        public bool UpdateExistingBadge(int badgeNumber, Badge newBadge)
-        {
-            Badge oldBadge = GetBadgeByNumber(badgeNumber);
-            if(oldBadge != null)
-            {
-                oldBadge.Number = newBadge.Number;
-                oldBadge.DoorAccess = newBadge.DoorAccess;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
     }
 }

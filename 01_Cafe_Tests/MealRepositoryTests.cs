@@ -10,12 +10,29 @@ namespace _01_Cafe_Tests
     {
         private MealRepository _mealRepo;
         private Meal _meal;
+       
         [TestInitialize]
         public void Arrange()
         {
+             List<string> _ingredients = new List<string>();
+            _ingredients.Add("chicken");
+            _ingredients.Add("noodles");
+            _ingredients.Add("veggies");
             _mealRepo = new MealRepository();
-            _meal = new Meal("Chicken Soup", 5, 10.99);
-            _mealRepo.AddItemsToMenu(_meal);
+            _meal = new Meal(FoodType.Lunch, "Chicken Soup", 5, "Noodles, chicken, and veggies", _ingredients, 12.99M);
+            _mealRepo.AddMealsToMenu(_meal);
+        }
+        [TestMethod]
+        public void AddMealToMenu_ShouldReturnCorrectBool()
+        {
+            //Arrange
+            //That was already done in the Test Initialize
+
+            //ACT
+            bool addResult = _mealRepo.AddMealsToMenu(_meal);
+
+            //Assert
+            Assert.IsTrue(addResult);
         }
 
         [TestMethod]
@@ -32,13 +49,13 @@ namespace _01_Cafe_Tests
         }
 
         [TestMethod]
-        public void MyTestMethod()
+        public void RecieveListOfMeals_ShouldReturnCorrectBool()
         {
             //Arrange
             //That was already done in the Test Initialize.
 
             //ACT
-            List<Meal> meals = _mealRepo.GetAllMeals();
+            List<Meal> meals = _mealRepo.GetItemsFromMenu();
             bool mealRepoHasMeal = meals.Contains(_meal);
 
             //Assert
@@ -46,6 +63,20 @@ namespace _01_Cafe_Tests
 
 
         }
+
+        [TestMethod]
+        public void DeleteMealFromMenu_ShouldGetCorrectBool()
+        {
+            //Arrange
+            Meal meal = _mealRepo.GetMealByName("Chicken Soup");
+
+            //ACT
+            bool wasRemoved = _mealRepo.DeleteExistingMenuItem(meal);
+
+            //Assert
+            Assert.IsTrue(wasRemoved);
+        }
+
 
     }
 }
